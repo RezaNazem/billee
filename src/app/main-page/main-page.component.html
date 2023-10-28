@@ -1,0 +1,51 @@
+<div [class.right-div]="bigSidebar" [class.right-div-small]="!bigSidebar">
+  <div class="menu-body">
+    <ul style="list-style-type:none;padding: 0;">
+      <li style="font-size: large;">
+        <input type="checkbox" checked id="cb1">
+        <label for="cb1" class="tab__label">گروه منو اول</label>
+        <ul class="test">
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-1')">منو ایتم 1</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-2')">منو ایتم 2</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-3')">منو ایتم 3</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-4')">منو ایتم 4</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-5')">منو ایتم 5</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-6')">منو ایتم 6</a></li>
+        </ul>
+      </li>
+      <li style="font-size: large;">
+        <input type="checkbox" checked id="cb2">
+        <label for="cb2" class="tab__label">گروه منو دوم</label>
+        <ul class="test">
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-7')">منو ایتم 1</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-8')">منو ایتم 2</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-9')">منو ایتم 3</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-10')">منو ایتم 4</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-11')">منو ایتم 5</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-12')">منو ایتم 6</a></li>
+        </ul>
+      </li>
+      <li style="font-size: large;">
+        <input type="checkbox" checked id="cb3">
+        <label for="cb3" class="tab__label">گروه منو سوم</label>
+        <ul class="test">
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-13')">منو ایتم 1</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-14')">منو ایتم 2</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-15')">منو ایتم 3</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-16')">منو ایتم 4</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-17')">منو ایتم 5</a></li>
+          <li><a class="menu-item" href="#" (click)="menuItemClick('menu-item-18')">منو ایتم 6</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div [class.main-div]="!bigSidebar" [class.main-div-small]="bigSidebar">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand bi bi-list" style="font-size: 2rem; color: cornflowerblue;" href="#"
+        (click)="handleClick()">
+      </a>
+    </div>
+  </nav>
+</div>
